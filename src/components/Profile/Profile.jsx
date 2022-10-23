@@ -14,7 +14,7 @@ export const Profile = ({
       <div className={css.description}>
         <img src={img} alt="User avatar" className={css.avatar} />
         <p className={css.profileName}>{username}</p>
-        <a
+        {/* <a
           className={css.profileTag}
           href="https://github.com/Ivan3777"
           target="_blank"
@@ -29,7 +29,7 @@ export const Profile = ({
           rel="noopener noreferrer"
         >
           {location}
-        </a>
+        </a> */}
       </div>
 
       <ul className={css.stats}>
