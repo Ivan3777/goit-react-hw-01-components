@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import css from './Profile.module.css';
+import img from '../images/photo_2022-10-09 21.47.02.jpeg';
 
 export const Profile = ({
   username,
@@ -11,10 +12,17 @@ export const Profile = ({
   return (
     <div className={css.profile}>
       <div className={css.description}>
-        <img src={avatar} alt="User avatar" className={css.avatar} />
+        <img src={img} alt="User avatar" className={css.avatar} />
         <p className={css.profileName}>{username}</p>
-        <p className={css.profileTag}>@{tag}</p>
-        <p className={css.profileLocation}>{location}</p>
+        <a className={css.profileTag} href="https://github.com/Ivan3777" target="_blank">
+          @{tag}
+        </a>
+        <a
+          className={css.profileLocation}
+          href="https://goo.gl/maps/A5G6VUa3AtpgqRkF7" target="_blank"
+        >
+          {location}
+        </a>
       </div>
 
       <ul className={css.stats}>
